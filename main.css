@@ -21,6 +21,7 @@ body {
     webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+	overflow-x: hidden;
     background-size: cover;
 	height:100%;
     width:100%; 
@@ -71,7 +72,7 @@ div#contentpane {
     padding-bottom: 100px;
     color: #B5B8B0;
     font-size:100%;
-    width: 85%; 
+    width: 55%; 
     clear: both;
     line-height: 150%;
     z-index: 1;
