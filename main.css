@@ -87,6 +87,7 @@ div#contentpane {
 
 @media screen and (max-width: 600px) {
   div#contentpane {
+	  font-size: 150%;
     width: 100vw;
   }
 }
