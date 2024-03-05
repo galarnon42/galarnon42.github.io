@@ -87,7 +87,7 @@ div#contentpane {
 
 @media screen and (max-width: 600px) {
   div#contentpane {
-	  font-size: 150%;
+	  font-size: 100%;
     width: 100vw;
   }
 }
@@ -107,7 +107,6 @@ div#pagetitle{
     /*margin-left: 10%;*/
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
     margin-bottom: 3%; /*previously 4*/
     display: flex;
     justify-content: center;
