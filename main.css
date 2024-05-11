@@ -29,7 +29,7 @@ body {
 
   @media (max-width: 600px) {
     body {
-        font-size: 1.4em; /* Smaller font size for screens less than 600px wide */
+        font-size: 1.3em; /* Smaller font size for screens less than 600px wide */
     }
     
     .responsive-image {
