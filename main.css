@@ -229,6 +229,13 @@ a {
 	color: #B5B8B0;  
     text-decoration: none;
 }
+.title{
+	font-weight: bold;
+}
+.conference{
+	font-weight: bold;
+}
+
 table ol {
     margin: 0%;
     margin-left: -1.3em;
