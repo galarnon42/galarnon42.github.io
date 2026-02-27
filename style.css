@@ -1,0 +1,423 @@
+/* ============================================================
+   Gal Arnon — Academic Site
+   Theme: Refined Mathematical Minimalism
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── Variables ─────────────────────────────────────────────── */
+:root {
+  --ink:          #1a1a2e;
+  --accent:       #1d4e8f;
+  --accent-light: #2e6db4;
+  --accent-muted: #d6e4f5;
+  --gold:         #8a6200;
+  --gold-bg:      #fdf8ee;
+  --muted:        #5a5a72;
+  --rule:         #dde2ec;
+  --bg:           #fafafa;
+  --bg-card:      #ffffff;
+  --font-body:    'EB Garamond', Georgia, serif;
+  --font-mono:    'JetBrains Mono', monospace;
+  --max-width:    720px;
+  --radius:       4px;
+}
+
+/* ── Reset & Base ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+  padding: 0 1.25rem;
+  animation: fadein 0.4s ease;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Layout ─────────────────────────────────────────────────── */
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+}
+
+/* ── Photo ──────────────────────────────────────────────────── */
+img.photo {
+  width: clamp(120px, 20vw, 210px);
+  height: clamp(120px, 20vw, 210px);
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid var(--rule);
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+  box-shadow: 0 2px 12px rgba(29, 78, 143, 0.10);
+  transition: box-shadow 0.3s ease;
+}
+
+img.photo:hover {
+  box-shadow: 0 4px 20px rgba(29, 78, 143, 0.20);
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+h1 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.15rem;
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+
+h4 {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin: 3rem 0 1.1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid var(--accent-muted);
+  position: relative;
+}
+
+h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
+  width: 2.5rem;
+  height: 1.5px;
+  background: var(--accent);
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 0.1rem;
+}
+
+.email {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+p.about {
+  font-size: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+/* ── Links ──────────────────────────────────────────────────── */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+a:hover {
+  color: var(--accent-light);
+  border-bottom-color: var(--accent-light);
+}
+
+a:visited {
+  color: var(--accent);
+}
+
+/* ── Nav Pills ──────────────────────────────────────────────── */
+.pills {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.pills a {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.18s, border-color 0.18s;
+}
+
+.pills a:hover {
+  background: var(--accent-muted);
+  border-color: var(--accent);
+}
+
+/* ── Publications List ──────────────────────────────────────── */
+ol.pubs {
+  list-style: none;
+  padding: 0;
+  /* Reversed counting: start at 13 and count down */
+  counter-reset: pub-counter 14;
+}
+
+ol.pubs li {
+  counter-increment: pub-counter -1;
+  position: relative;
+  padding: 1.1rem 1rem 1.1rem 3rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition: background 0.18s, border-color 0.18s;
+  line-height: 1.5;
+}
+
+ol.pubs li::before {
+  content: counter(pub-counter);
+  position: absolute;
+  left: 0.9rem;
+  top: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 500;
+  min-width: 1.4rem;
+  text-align: right;
+}
+
+ol.pubs li:hover {
+  background: var(--bg-card);
+  border-color: var(--rule);
+}
+
+/* Featured (best paper) row */
+ol.pubs li.featured {
+  background: var(--gold-bg);
+  border-color: #e8d48a;
+}
+
+/* Paper title link */
+a.pub-title {
+  font-weight: 500;
+  font-size: 1.01rem;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 0.25rem;
+  line-height: 1.35;
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.18s, border-color 0.18s;
+}
+
+a.pub-title:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Author list */
+p.pub-authors {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 0.2rem;
+}
+
+/* Venue */
+span.pub-venue {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+/* Best paper badge */
+.badge-award {
+  display: inline-block;
+  background: #f5e9b8;
+  color: var(--gold);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.05rem 0.4rem;
+  border-radius: 2px;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+/* ── Talk / Blog / Video Links ──────────────────────────────── */
+.pub-links {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.pub-link {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  color: var(--muted);
+  background: var(--bg);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.18s, border-color 0.18s, color 0.18s;
+}
+
+.pub-link:hover {
+  background: var(--accent-muted);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pub-link.video {
+  border-color: #c9dff7;
+  color: var(--accent);
+}
+
+.pub-link.video::before {
+  content: '▶ ';
+  font-size: 0.65rem;
+}
+
+/* ── Lists (Awards / Service / Teaching / Media) ────────────── */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.85rem 1rem 0.85rem 1.2rem;
+  margin-bottom: 0.4rem;
+  border-left: 2.5px solid var(--gold);
+  background: var(--gold-bg);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+ul li strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+/* Plain style for service / teaching / media lists */
+ul.plain li {
+  border-left-color: var(--rule);
+  background: var(--bg-card);
+}
+
+ul.plain li strong {
+  display: inline;
+  color: var(--accent);
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.76rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+  margin-top: 3rem;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+
+  img.photo {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+
+  ol.pubs li { padding-left: 2.5rem; }
+  h4 { font-size: 0.68rem; }
+}
+
+h4.collapsible::before {
+  content: '▾ ';
+  font-size: 0.8rem;
+}
+
+h4.collapsible.collapsed::before {
+  content: '▸ ';
+}
+
+/* ── Dark Mode ──────────────────────────────────────────────── */
+
+
+/* Via toggle button — identical values, separate block outside @media */
+html[data-theme="dark"] {
+  --ink:          #e8e8f0;
+  --accent:       #7aaee8;
+  --accent-light: #9dc4f5;
+  --accent-muted: #1a2d45;
+  --gold:         #f0c040;
+  --gold-bg:      #2a2510;
+  --muted:        #9090a8;
+  --rule:         #2e3248;
+  --bg:           #1a1a2e;
+  --bg-card:      #24243e;
+}
+
+html[data-theme="dark"] .badge-award        { background: #4a3d00; color: #f0c040; }
+html[data-theme="dark"] ol.pubs li.featured { background: #2a2510; border-color: #6a5800; }
+
+/* ── Theme Toggle Button ────────────────────────────────────── */
+.theme-toggle {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--rule);
+  border-radius: 2rem;
+  padding: 0.3rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  z-index: 100;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
