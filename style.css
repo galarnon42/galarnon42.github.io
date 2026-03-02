@@ -414,6 +414,18 @@ ul.plain li strong {
     margin: 0 auto 1.5rem;
   }
 
+  /* Center the header block on mobile */
+  h1,
+  .subtitle,
+  .email,
+  .pills {
+    text-align: center;
+  }
+
+  .pills {
+    justify-content: center;
+  }
+
   ol.pubs li { padding-left: 2.5rem; }
   h4 { font-size: 0.68rem; }
 }
