@@ -96,7 +96,6 @@ h4 {
   padding-bottom: 0.5rem;
   border-bottom: 1.5px solid var(--accent-muted);
   position: relative;
-  scroll-margin-top: 3.5rem;
 }
 
 h4::after {

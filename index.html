@@ -171,6 +171,16 @@ toggle.addEventListener('click', function() {
   toggle.textContent  = isDark ? '◐ Dark' : '◐ Light';
   localStorage.setItem('theme', isDark ? 'light' : 'dark');
 });
+
+function updateScrollMargins() {
+  const navHeight = document.querySelector('.site-nav').offsetHeight;
+  document.querySelectorAll('h4[id]').forEach(function(h) {
+    h.style.scrollMarginTop = (navHeight + 8) + 'px';
+  });
+}
+
+updateScrollMargins();
+window.addEventListener('resize', updateScrollMargins);
 </script>
 </body>
 </html>
