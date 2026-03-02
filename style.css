@@ -96,6 +96,7 @@ h4 {
   padding-bottom: 0.5rem;
   border-bottom: 1.5px solid var(--accent-muted);
   position: relative;
+  scroll-margin-top: 3.5rem;
 }
 
 h4::after {
@@ -184,6 +185,45 @@ a:focus-visible {
 .pills a:hover {
   background: var(--accent-muted);
   border-color: var(--accent);
+}
+
+/* ── Site Nav ───────────────────────────────────────────────── */
+.site-nav {
+  display: flex;
+  gap: 0rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 50;
+  padding: 0.6rem 0;
+  justify-content: center;
+}
+
+.site-nav a {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius);
+  transition: color 0.18s, background 0.18s;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+  background: var(--accent-muted);
+  border-bottom: none;
+}
+
+.site-nav a:visited {
+  color: var(--muted);
 }
 
 /* ── Publications List ──────────────────────────────────────── */

@@ -6,8 +6,16 @@
   <title>Gal Arnon</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top" >
   <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">◐ Dark</button>
+  <nav class="site-nav">
+    <a href="#top">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#awards">Awards</a>
+    <a href="#media">Media</a>
+    <a href="#service">Service</a>
+    <a href="#teaching">Teaching</a>
+  </nav>
 <div class="wrapper">
 
   <!-- Header -->
@@ -23,18 +31,18 @@
   </div>
 
   <!-- About -->
-  <h4>About Me</h4>
+  <h4 >About Me</h4>
   <p class="about">
     I am a postdoctoral researcher at Bocconi University.
     My work lies at the intersection of cryptography and computational complexity, focusing on the power and limitations of efficient proof systems as well as their applications.
     Prior to Bocconi, I was a research fellow at the Simons Institute at UC Berkeley. I received my Ph.D. from the Weizmann Institute, where I was very fortunate to be advised by <a href="http://www.wisdom.weizmann.ac.il/~naor/" target="_blank">Moni Naor</a> and <a href="https://eylonyogev.com/" target="_blank">Eylon Yogev</a>.</p>
 
   <!-- Publications — rendered by data.js -->
-  <h4 class="collapsible">Publications</h4>
+  <h4 id="publications">Publications</h4>
   <ol class="pubs" id="pub-list"></ol>
 
   <!-- Awards -->
-  <h4>Awards</h4>
+  <h4 id="awards">Awards</h4>
   <ul class="awards">
     <li>
       <strong>Esther Hellinger Memorial Prize for academic excellence</strong>
@@ -47,7 +55,7 @@
   </ul>
 
   <!-- Media -->
-  <h4>Media</h4>
+  <h4 id="media">Media</h4>
   <ul class="plain">
     <li>
       <strong>Quanta Magazine:</strong>
@@ -62,7 +70,7 @@
   
 
   <!-- Service -->
-  <h4>Service</h4>
+  <h4 id="service">Service</h4>
   <ul class="plain">
     <li><strong>Proximity Prize:</strong> Committee member for the <a href="https://proximityprize.org/" target="_blank">Proximity Prize</a> initiative of the Ethereum Foundation.</li>
     <li><strong>Workshop Organization:</strong> <a href="https://lattices-meet-hashes23.epfl.ch/" target="_blank">Lattices Meet Hashes</a> — Recent Advances in Post-Quantum Zero-Knowledge Proofs, EPFL, May 2023.</li>
@@ -71,7 +79,7 @@
   </ul>
 
   <!-- Teaching -->
-  <h4>Teaching</h4>
+  <h4 id="teaching">Teaching</h4>
   <ul class="plain">
     <li><strong>Teaching Assistant:</strong> Foundations and Frontiers of Probabilistic Proofs — MSRI (SLMath) Summer School,  ETH Zurich, July 2023.</li>
     <li><strong>Teaching Assistant:</strong> Foundations and Frontiers of Probabilistic Proofs — MSRI (SLMath) Summer School, Virtual, July-August 2021.</li>
