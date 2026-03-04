@@ -131,13 +131,19 @@
 
     const li = document.createElement('li');
     if (pub.featured) li.classList.add('featured');
-
+    if (pub.url === ""){
+      li.innerHTML =
+       pub.title +
+      '<p class="pub-authors">' + authorHTML + '</p>' +
+      '<span class="pub-venue">' + pub.venue + badgeHTML + suffix + '</span>' +
+      linksHTML;
+    } else{
     li.innerHTML =
       '<a class="pub-title" href="' + pub.url + '" target="_blank">' + pub.title + '</a>' +
       '<p class="pub-authors">' + authorHTML + '</p>' +
       '<span class="pub-venue">' + pub.venue + badgeHTML + suffix + '</span>' +
       linksHTML;
-
+    }
     list.appendChild(li);
   });
 

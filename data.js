@@ -39,6 +39,15 @@ const COAUTHORS = {
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
   {
+    title:    "Interactive Proofs for Batch Polynomial Evaluation",
+    url:      "",
+    authors:  ["Gal Arnon", "Alessandro Chiesa", "Giacomo Fenzi", "Eylon Yogev"],
+    venue:    "Manuscript",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
+  {
     title:    "Pairing-Based SNARGs with Two Group Elements",
     url:      "https://eprint.iacr.org/2025/2160",
     authors:  ["Gal Arnon", "Jesko Dujmovic", "Eylon Yogev"],
