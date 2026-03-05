@@ -40,7 +40,7 @@ const COAUTHORS = {
 const PUBLICATIONS = [
   {
     title:    "Interactive Proofs for Batch Polynomial Evaluation",
-    url:      "",
+    url:      "https://eprint.iacr.org/2026/448",
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Giacomo Fenzi", "Eylon Yogev"],
     venue:    "Manuscript",
     featured: false,
