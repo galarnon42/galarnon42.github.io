@@ -10,6 +10,7 @@
   
   <nav class="site-nav">
     <a href="#about">About</a>
+    <a href="#preprints">Preprints</a>
     <a href="#publications">Publications</a>
     <a href="#awards">Awards</a>
     <a href="#media">Media</a>
@@ -38,6 +39,10 @@
     I am a postdoctoral researcher at Bocconi University.
     My work lies at the intersection of cryptography and computational complexity, focusing on the power and limitations of efficient proof systems as well as their applications.
     Prior to Bocconi, I was a research fellow at the Simons Institute at UC Berkeley. I received my Ph.D. from the Weizmann Institute, where I was very fortunate to be advised by <a href="http://www.wisdom.weizmann.ac.il/~naor/" target="_blank">Moni Naor</a> and <a href="https://eylonyogev.com/" target="_blank">Eylon Yogev</a>.</p>
+
+  <!-- Preprints — rendered by data.js -->
+  <h4 id="preprints">Preprints</h4>
+  <ol class="pubs" id="preprint-list"></ol>
 
   <!-- Publications — rendered by data.js -->
   <h4 id="publications">Publications</h4>
@@ -97,13 +102,16 @@
 <!-- Load data and render publications -->
 <script src="data.js"></script>
 <script>
+  const preprints   = PUBLICATIONS.filter(function(p) { return p.preprint === true; });
+  const pubs        = PUBLICATIONS.filter(function(p) { return !p.preprint; });
+
+  const preprintList = document.getElementById('preprint-list');
+  preprintList.style.counterReset = 'pub-counter ' + (preprints.length + 1);
+
   const list = document.getElementById('pub-list');
-  const total = PUBLICATIONS.length;
+  list.style.counterReset = 'pub-counter ' + (pubs.length + 1);
 
-  // Set CSS counter to count down from total
-  list.style.counterReset = 'pub-counter ' + (total + 1);
-
-  PUBLICATIONS.forEach(function(pub) {
+  function renderPub(pub, container) {
     // Build author string with links
     const authorHTML = pub.authors.map(function(name) {
       if (name === 'Gal Arnon') return 'Gal Arnon';
@@ -144,8 +152,11 @@
       '<span class="pub-venue">' + pub.venue + badgeHTML + suffix + '</span>' +
       linksHTML;
     }
-    list.appendChild(li);
-  });
+    container.appendChild(li);
+  }
+
+  preprints.forEach(function(pub) { renderPub(pub, preprintList); });
+  pubs.forEach(function(pub)      { renderPub(pub, list); });
 
     document.querySelectorAll('h4.collapsible').forEach(function(h4) {
     const content = h4.nextElementSibling;
