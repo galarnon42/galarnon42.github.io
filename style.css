@@ -261,10 +261,10 @@ ol.pubs li {
 ol.pubs li::before {
   content: counter(pub-counter);
   position: absolute;
-  left: 0.9rem;
-  top: 1.2rem;
+  left: 0.7rem;
+  top: 1.15rem;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   color: var(--muted);
   font-weight: 500;
   min-width: 1.4rem;
