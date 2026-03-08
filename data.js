@@ -51,7 +51,9 @@ const PUBLICATIONS = [
     preprint: false,
     featured: false,
     badge:    null,
-    links:    [],
+    links:    [
+      {label: "CRYPTO 2025", url:"https://www.youtube.com/watch?v=163heHUartE&list=PLeeS-3Ml-rppEDAlrjdfwJBBy46Lt8Q9a&index=31", video:true},
+    ],
   },
   {
     title:    "Towards a White-Box Secure Fiat-Shamir Transformation",
@@ -62,6 +64,8 @@ const PUBLICATIONS = [
     featured: false,
     badge:    null,
     links:    [
+      {label: "Simons Institute", url:"https://www.youtube.com/watch?v=6SjjOmTi6jk", video:true},
+      {label: "CRYPTO 2025", url:"https://www.youtube.com/watch?v=94sCCEmL4qI&list=PLeeS-3Ml-rppEDAlrjdfwJBBy46Lt8Q9a&index=43", video:true},
       { label: "Quanta Magazine", url: "https://www.quantamagazine.org/computer-scientists-figure-out-how-to-prove-lies-20250709/", video: false },
     ],
   },
@@ -73,7 +77,9 @@ const PUBLICATIONS = [
     preprint: false,
     featured: false,
     badge:    null,
-    links:    [],
+    links:    [
+      {label: "EUROCRYPT 2025", url:"https://youtu.be/1x910AdAe9c?si=zhSbZ8A9DCEP1W5y&t=1076", video:true},
+    ],
   },
   {
     title:    "WHIR: Reed-Solomon Proximity Testing with Super-Fast Verification",
@@ -84,6 +90,7 @@ const PUBLICATIONS = [
     featured: false,
     badge:    null,
     links:    [
+      {label: "EUROCRYPT 2025", url:"https://youtu.be/ulzdtHbJqik?si=8DOmWXy84zuf-LOU&t=1328", video:true},
       { label: "Blog post",   url: "https://gfenzi.io/papers/whir/", video: false },
     ],
   },
@@ -95,7 +102,7 @@ const PUBLICATIONS = [
     preprint: false,
     featured: false,
     badge:    null,
-    links:    [],
+    links:    [{label: "TCC 2024", url:"https://www.youtube.com/watch?v=Fk_V58uJLIA&list=PLeeS-3Ml-rprVlYByPBbSfZvgHMOlLywK&index=6", video:true},],
   },
   {
     title:    "STIR: Reed-Solomon Proximity Testing with Fewer Queries",
