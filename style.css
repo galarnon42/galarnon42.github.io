@@ -225,6 +225,20 @@ a:focus-visible {
   color: var(--muted);
 }
 
+/* ── Papers Sub-labels (Preprints / Publications) ───────────── */
+p.papers-sublabel {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 1.5rem 0 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-left: 2px solid var(--rule);
+  display: inline-block;
+}
+
 /* ── Publications List ──────────────────────────────────────── */
 ol.pubs {
   list-style: none;
