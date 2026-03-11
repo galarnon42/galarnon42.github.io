@@ -13,6 +13,7 @@ const COAUTHORS = {
   "Tomer Grossman":    "https://dblp.org/pid/248/7301.html",
   "Guy N. Rothblum":   "https://guyrothblum.wordpress.com/",
   "Moni Naor":         "http://www.wisdom.weizmann.ac.il/~naor/",
+  "Dan Boneh":         "https://crypto.stanford.edu/~dabo/",
 };
 
 /* ----------------------------------------------------------
@@ -24,11 +25,21 @@ const COAUTHORS = {
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
   {
+    title:    "Open Problems in List Decoding and Correlated Agreement (coming soon)",
+    url:      "",
+    authors:  ["Gal Arnon", "Dan Boneh", "Giacomo Fenzi"],
+    venue:    "",
+    type:     "survey",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
+  {
     title:    "Interactive Proofs for Batch Polynomial Evaluation",
     url:      "https://eprint.iacr.org/2026/448",
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Giacomo Fenzi", "Eylon Yogev"],
     venue:    "",
-    preprint: true,
+    type:     "preprint",
     featured: false,
     badge:    null,
     links:    [],
@@ -38,7 +49,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2025/2160",
     authors:  ["Gal Arnon", "Jesko Dujmovic", "Eylon Yogev"],
     venue:    "",
-    preprint: true,
+    type:     "preprint",
     featured: false,
     badge:    null,
     links:    [],
@@ -48,7 +59,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2025/517",
     authors:  ["Gal Arnon", "Jesko Dujmovic", "Yuval Ishai"],
     venue:    "CRYPTO 2025",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -60,7 +71,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2025/329",
     authors:  ["Gal Arnon", "Eylon Yogev"],
     venue:    "CRYPTO 2025 · ZKProof 7",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -74,7 +85,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2024/1659",
     authors:  ["Gal Arnon", "Shany Ben-David", "Eylon Yogev"],
     venue:    "EUROCRYPT 2025",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -86,7 +97,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2024/1586",
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Giacomo Fenzi", "Eylon Yogev"],
     venue:    "EUROCRYPT 2025 · ZKSummit 12 · ZKProof 7",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -99,7 +110,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2024/832",
     authors:  ["Gal Arnon", "Shany Ben-David", "Eylon Yogev"],
     venue:    "TCC 2024",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [{label: "TCC 2024", url:"https://www.youtube.com/watch?v=Fk_V58uJLIA&list=PLeeS-3Ml-rprVlYByPBbSfZvgHMOlLywK&index=6", video:true},],
@@ -110,7 +121,7 @@ const PUBLICATIONS = [
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Giacomo Fenzi", "Eylon Yogev"],
     venue:       "CRYPTO 2024",
     venueSuffix: " · ZKSummit 11 · ZKProof 6",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    "Best Paper",
     links:    [
@@ -124,7 +135,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2023/1062",
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Eylon Yogev"],
     venue:    "FOCS 2023 · ITC 2024 Highlights",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -137,7 +148,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2022/790",
     authors:  ["Gal Arnon", "Amey Bhangale", "Alessandro Chiesa", "Eylon Yogev"],
     venue:    "TCC 2022",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -149,7 +160,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2022/168",
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Eylon Yogev"],
     venue:    "CCC 2022",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -161,7 +172,7 @@ const PUBLICATIONS = [
     url:      "https://eprint.iacr.org/2021/915",
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Eylon Yogev"],
     venue:    "EUROCRYPT 2022",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [
@@ -183,7 +194,7 @@ const PUBLICATIONS = [
     url:      "https://eccc.weizmann.ac.il/report/2019/176/",
     authors:  ["Gal Arnon", "Guy N. Rothblum"],
     venue:    "ITC 2021",
-    preprint: false,
+    type:     "pub",
     featured: false,
     badge:    null,
     links:    [

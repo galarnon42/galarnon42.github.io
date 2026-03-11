@@ -41,6 +41,8 @@
 
   <!-- Papers — rendered by data.js -->
   <h4 id="papers">Papers</h4>
+  <p class="papers-sublabel" id="label-surveys">Surveys</p>
+  <ul class="pubs" id="surveys-list"></ul>
 
   <p class="papers-sublabel" id="label-preprints">Preprints</p>
   <ol class="pubs" id="preprint-list"></ol>
@@ -102,8 +104,12 @@
 <!-- Load data and render publications -->
 <script src="data.js"></script>
 <script>
-  const preprints   = PUBLICATIONS.filter(function(p) { return p.preprint === true; });
-  const pubs        = PUBLICATIONS.filter(function(p) { return !p.preprint; });
+  const surveys   = PUBLICATIONS.filter(function(p) { return p.type === "survey"; });
+  const preprints   = PUBLICATIONS.filter(function(p) { return p.type === "preprint"; });
+  const pubs        = PUBLICATIONS.filter(function(p) { return p.type === "pub"; });
+
+  const surveysList = document.getElementById('surveys-list');
+  surveysList.style.counterReset = 'pub-counter ' + (surveys.length + 1);
 
   const preprintList = document.getElementById('preprint-list');
   preprintList.style.counterReset = 'pub-counter ' + (preprints.length + 1);
@@ -155,6 +161,7 @@
     container.appendChild(li);
   }
 
+  surveys.forEach(function(pub) { renderPub(pub, surveysList); });
   preprints.forEach(function(pub) { renderPub(pub, preprintList); });
   pubs.forEach(function(pub)      { renderPub(pub, list); });
 
