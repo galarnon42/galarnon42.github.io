@@ -282,36 +282,6 @@ ol.pubs li.featured {
   border-color: #e8d48a;
 }
 
-ul.pubs {
-  list-style: none;
-  padding: 0;
-}
-
-ul.pubs li {
-  position: relative;
-  padding: 1.1rem 1rem 0.75rem 3rem;
-  margin-bottom: 0.5rem;
-  border-radius: var(--radius);
-  border: 1px solid transparent;
-  transition: background 0.18s, border-color 0.18s;
-  line-height: 1.5;
-  border-left: none;
-  background: transparent;
-}
-
-
-
-ul.pubs li:hover {
-  background: var(--bg-card);
-  border-color: var(--rule);
-}
-
-/* Featured (best paper) row */
-ul.pubs li.featured {
-  background: var(--gold-bg);
-  border-color: #e8d48a;
-}
-
 /* Paper title link */
 a.pub-title {
   font-weight: 500;
@@ -522,4 +492,8 @@ html[data-theme="dark"] ol.pubs li.featured { background: #2a2510; border-color:
   color: var(--accent);
   background: var(--accent-muted);
   border-color: var(--accent);
+}
+
+.small {
+  font-size: 0.85em;
 }

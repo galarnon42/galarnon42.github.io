@@ -11,6 +11,7 @@
   <nav class="site-nav">
     <a href="#about">About</a>
     <a href="#papers">Papers</a>
+    <a href="#surveys">Surveys</a>
     <a href="#awards">Awards</a>
     <a href="#media">Media</a>
     <a href="#service">Service</a>
@@ -41,14 +42,21 @@
 
   <!-- Papers — rendered by data.js -->
   <h4 id="papers">Papers</h4>
-  <p class="papers-sublabel" id="label-surveys">Surveys</p>
-  <ul class="pubs" id="surveys-list"></ul>
 
   <p class="papers-sublabel" id="label-preprints">Preprints</p>
   <ol class="pubs" id="preprint-list"></ol>
 
   <p class="papers-sublabel" id="label-publications">Publications</p>
   <ol class="pubs" id="pub-list"></ol>
+  
+  <!-- Surveys -->
+  <h4 id="surveys">Surveys</h4>
+  <ul class="plain">
+    <li>
+      <strong>Open Problems in List Decoding and Correlated Agreement <span class="small">(Coming Soon)</span></strong>
+      <p class="pub-authors">Gal Arnon, <a href="https://crypto.stanford.edu/~dabo/" target="_blank">Dan Boneh</a>, <a href="https://gfenzi.io/" target="_blank">Giacomo Fenzi</a></p>
+    </li>
+  </ul>
 
   <!-- Awards -->
   <h4 id="awards">Awards</h4>
@@ -104,12 +112,8 @@
 <!-- Load data and render publications -->
 <script src="data.js"></script>
 <script>
-  const surveys   = PUBLICATIONS.filter(function(p) { return p.type === "survey"; });
   const preprints   = PUBLICATIONS.filter(function(p) { return p.type === "preprint"; });
   const pubs        = PUBLICATIONS.filter(function(p) { return p.type === "pub"; });
-
-  const surveysList = document.getElementById('surveys-list');
-  surveysList.style.counterReset = 'pub-counter ' + (surveys.length + 1);
 
   const preprintList = document.getElementById('preprint-list');
   preprintList.style.counterReset = 'pub-counter ' + (preprints.length + 1);
@@ -161,7 +165,6 @@
     container.appendChild(li);
   }
 
-  surveys.forEach(function(pub) { renderPub(pub, surveysList); });
   preprints.forEach(function(pub) { renderPub(pub, preprintList); });
   pubs.forEach(function(pub)      { renderPub(pub, list); });
 
