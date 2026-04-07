@@ -14,6 +14,9 @@ const COAUTHORS = {
   "Guy N. Rothblum":   "https://guyrothblum.wordpress.com/",
   "Moni Naor":         "http://www.wisdom.weizmann.ac.il/~naor/",
   "Dan Boneh":         "https://crypto.stanford.edu/~dabo/",
+  "Jad Silbak":        "https://sites.google.com/view/jadsilbak/home",
+  "Noam Mazor":        "https://sites.google.com/view/noammazor",
+  "Rafael Pass":       "https://www.cs.cornell.edu/~rafael/",
 };
 
 /* ----------------------------------------------------------
@@ -24,12 +27,22 @@ const COAUTHORS = {
    preprint: false → appears in "Publications" section
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
-  {
-    title:    "Open Problems in List Decoding and Correlated Agreement (coming soon)",
+  /*{
+    title:    "Complexity-Theoretic Consequences of Zero-Knowledge with Inefficient Simulation and Witness Indistinguishability",
     url:      "",
-    authors:  ["Gal Arnon", "Dan Boneh", "Giacomo Fenzi"],
+    authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
     venue:    "",
-    type:     "survey",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },*/
+  {
+    title:    "Witness Indistinguishable Arguments of Knowledge and One-Way Functions",
+    url:      "https://eccc.weizmann.ac.il/report/2026/050",
+    authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
+    venue:    "",
+    type:     "preprint",
     featured: false,
     badge:    null,
     links:    [],
