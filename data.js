@@ -39,7 +39,7 @@ const PUBLICATIONS = [
   },*/
   {
     title:    "Witness Indistinguishable Arguments of Knowledge and One-Way Functions",
-    url:      "https://eccc.weizmann.ac.il/report/2026/050",
+    url:      "https://eprint.iacr.org/2026/682",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
     venue:    "",
     type:     "preprint",
