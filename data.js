@@ -61,7 +61,7 @@ const PUBLICATIONS = [
     title:    "Pairing-Based SNARGs with Two Group Elements",
     url:      "https://eprint.iacr.org/2025/2160",
     authors:  ["Gal Arnon", "Jesko Dujmovic", "Eylon Yogev"],
-    venue:    "",
+    venue:    "ZKProof 8",
     type:     "preprint",
     featured: false,
     badge:    null,
