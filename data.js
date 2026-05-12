@@ -65,7 +65,9 @@ const PUBLICATIONS = [
     type:     "pub",
     featured: false,
     badge:    null,
-    links:    [],
+    links:    [
+      {label: "ZKProof 8", url:"https://www.youtube.com/watch?v=hyLEYoKfxUw&list=PLOEty2U8Y69XcOKvpEMeJ2eTXgRZb-AeY&index=31", video:true},
+      ],
   },
   {
     title:    "Designated-Verifier SNARGs with One Group Element",
