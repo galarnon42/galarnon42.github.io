@@ -17,6 +17,12 @@ const COAUTHORS = {
   "Jad Silbak":        "https://sites.google.com/view/jadsilbak/home",
   "Noam Mazor":        "https://sites.google.com/view/noammazor",
   "Rafael Pass":       "https://www.cs.cornell.edu/~rafael/",
+  "Damiano Abram":     "https://damianoabram.github.io/",
+  "Valerio Cini":      "https://sites.google.com/view/valeriocini/",
+  "Saroja Erabelli":   "https://wp.nyu.edu/sarojaerabelli/",
+  "Paul Lou":          "https://paullou.me/",
+  "Giulio Malavolta":  "https://sites.google.com/view/giuliomalavolta/",
+  "Lawrence Roy":      "https://ldr709.gitlab.io/",
 };
 
 /* ----------------------------------------------------------
@@ -28,7 +34,7 @@ const COAUTHORS = {
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
   /*{
-    title:    "Complexity-Theoretic Consequences of Zero-Knowledge with Inefficient Simulation and Witness Indistinguishability",
+    title:    "Does Witness Indistinguishability Require Cryptography?",
     url:      "",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
     venue:    "",
@@ -37,6 +43,16 @@ const PUBLICATIONS = [
     badge:    null,
     links:    [],
   },*/
+  {
+    title:    "Decomposed LWE is Equivalent to Succinct LWE",
+    url:      "https://eprint.iacr.org/2026/1829",
+    authors:  ["Damiano Abram", "Gal Arnon", "Valerio Cini", "Paul Lou", "Giulio Malavolta", "Lawrence Roy"],
+    venue:    "",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
   {
     title:    "Witness Indistinguishable Arguments of Knowledge and One-Way Functions",
     url:      "https://eprint.iacr.org/2026/682",

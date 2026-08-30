@@ -57,6 +57,7 @@
     <li>
       <a class="pub-title" href="https://eprint.iacr.org/2026/680" target="_blank">Open Problems in List Decoding and Correlated Agreement</a>
       <p class="pub-authors">Gal Arnon, <a href="https://crypto.stanford.edu/~dabo/" target="_blank">Dan Boneh</a>, <a href="https://gfenzi.io/" target="_blank">Giacomo Fenzi</a></p>
+      Companion survey for the Ethereum Foundation's <a href="https://proximityprize.org/" target="_blank">Proximity Prize</a> initiative.
     </li>
   </ul>
 
@@ -142,6 +143,9 @@
       ? ' <span class="badge-award">' + pub.badge + '</span>'
       : '';
       const suffix = pub.venueSuffix || '';
+      const venueHTML = (pub.venue || pub.badge)
+  ? '<span class="pub-venue">' + pub.venue + badgeHTML + suffix + '</span>'
+  : '';
 
     // Build pub-links
     const linksHTML = pub.links.length ? (
@@ -159,13 +163,13 @@
       li.innerHTML =
        pub.title +
       '<p class="pub-authors">' + authorHTML + '</p>' +
-      '<span class="pub-venue">' + pub.venue + badgeHTML + suffix + '</span>' +
+      venueHTML +
       linksHTML;
     } else{
     li.innerHTML =
       '<a class="pub-title" href="' + pub.url + '" target="_blank">' + pub.title + '</a>' +
       '<p class="pub-authors">' + authorHTML + '</p>' +
-      '<span class="pub-venue">' + pub.venue + badgeHTML + suffix + '</span>' +
+      venueHTML +
       linksHTML;
     }
     container.appendChild(li);

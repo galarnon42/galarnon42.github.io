@@ -258,6 +258,14 @@ ol.pubs li {
   line-height: 1.5;
 }
 
+ol.pubs li:not(:has(.pub-venue)) {
+  padding-bottom: 0.5rem;
+}
+
+ol.pubs li:not(:has(.pub-venue)) .pub-authors {
+  margin-bottom: 0;
+}
+
 ol.pubs li::before {
   content: counter(pub-counter);
   position: absolute;
