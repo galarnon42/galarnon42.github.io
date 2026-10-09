@@ -23,6 +23,9 @@ const COAUTHORS = {
   "Paul Lou":          "https://paullou.me/",
   "Giulio Malavolta":  "https://sites.google.com/view/giuliomalavolta/",
   "Lawrence Roy":      "https://ldr709.gitlab.io/",
+  "Alon Rosen":        "https://www.alonrosen.net/",
+  "Andrej Bogdanov":  "https://andrejb.net/",
+  "Lorenzo Taschin":   "https://dblp.org/pid/396/7489.html",
 };
 
 /* ----------------------------------------------------------
@@ -33,21 +36,51 @@ const COAUTHORS = {
    preprint: false → appears in "Publications" section
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
-  /*{
+{
     title:    "Does Witness Indistinguishability Require Cryptography?",
     url:      "",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
-    venue:    "",
+    venue:    "(Under Submission)",
     type:     "preprint",
     featured: false,
     badge:    null,
     links:    [],
-  },*/
+  },
+{
+    title:    "Complexity-Theoretic Consequences of Zero-Knowledge with Inefficient Simulation",
+    url:      "",
+    authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
+    venue:    "(Under Submission)",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
+  {
+    title:    "Worst-Case Hardness for Succinct and Decomposed LWE",
+    url:      "",
+    authors:  ["Damiano Abram", "Gal Arnon", "Valerio Cini", "Paul Lou", "Giulio Malavolta", "Lawrence Roy"],
+    venue:    "(Under submission)",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
+  {
+    title:    "Limitations on Autoregressive Token Generation via Sequential Sampling",
+    url:      "",
+    authors:  ["Gal Arnon", "Andrej Bogdanov", "Paul Lou", "Giulio Malavolta", "Alon Rosen", "Lorenzo Taschin"],
+    venue:    "(Under Sunmission)",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
   {
     title:    "Decomposed LWE is Equivalent to Succinct LWE",
     url:      "https://eprint.iacr.org/2026/1829",
     authors:  ["Damiano Abram", "Gal Arnon", "Valerio Cini", "Paul Lou", "Giulio Malavolta", "Lawrence Roy"],
-    venue:    "",
+    venue:    "Incorperated Into: Worst-Case Hardness for Succinct and Decomposed LWE",
     type:     "preprint",
     featured: false,
     badge:    null,
@@ -57,7 +90,7 @@ const PUBLICATIONS = [
     title:    "Witness Indistinguishable Arguments of Knowledge and One-Way Functions",
     url:      "https://eprint.iacr.org/2026/682",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
-    venue:    "",
+    venue:    "(Under Submission)",
     type:     "preprint",
     featured: false,
     badge:    null,
