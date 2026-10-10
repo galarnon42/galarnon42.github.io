@@ -36,6 +36,16 @@ const COAUTHORS = {
    preprint: false → appears in "Publications" section
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
+/*{
+    title:    "Verifying (Almost) as Fast as Reading",
+    url:      "",
+    authors:  ["Gal Arnon", "Jesko Dujmovic", "Yuval Ishai"],
+    venue:    "",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
 {
     title:    "Does Witness Indistinguishability Require Cryptography?",
     url:      "",
@@ -55,7 +65,7 @@ const PUBLICATIONS = [
     featured: false,
     badge:    null,
     links:    [],
-  },
+  },*/
   {
     title:    "Worst-Case Hardness for Succinct and Decomposed LWE",
     url:      "",
