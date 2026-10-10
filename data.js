@@ -80,7 +80,7 @@ const PUBLICATIONS = [
     title:    "Decomposed LWE is Equivalent to Succinct LWE",
     url:      "https://eprint.iacr.org/2026/1829",
     authors:  ["Damiano Abram", "Gal Arnon", "Valerio Cini", "Paul Lou", "Giulio Malavolta", "Lawrence Roy"],
-    venue:    "Note Incorperated Into: Worst-Case Hardness for Succinct and Decomposed LWE",
+    venue:    "Incorperated Into: Worst-Case Hardness for Succinct and Decomposed LWE",
     type:     "preprint",
     featured: false,
     badge:    null,
