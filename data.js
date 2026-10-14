@@ -68,7 +68,7 @@ const PUBLICATIONS = [
   },*/
   {
     title:    "Worst-Case Hardness for Succinct and Decomposed LWE",
-    url:      "",
+    url:      "https://eprint.iacr.org/2026/2443",
     authors:  ["Damiano Abram", "Gal Arnon", "Valerio Cini", "Paul Lou", "Giulio Malavolta", "Lawrence Roy"],
     venue:    "",
     type:     "preprint",
@@ -78,7 +78,7 @@ const PUBLICATIONS = [
   },
   {
     title:    "Limitations on Autoregressive Token Generation via Sequential Sampling",
-    url:      "",
+    url:      "https://arxiv.org/abs/2610.14615",
     authors:  ["Gal Arnon", "Andrej Bogdanov", "Paul Lou", "Giulio Malavolta", "Alon Rosen", "Lorenzo Taschin"],
     venue:    "",
     type:     "preprint",
