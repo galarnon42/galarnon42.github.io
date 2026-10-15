@@ -45,7 +45,7 @@ const PUBLICATIONS = [
     featured: false,
     badge:    null,
     links:    [],
-  },
+  },*/
 {
     title:    "Does Witness Indistinguishability Require Cryptography?",
     url:      "",
@@ -56,7 +56,7 @@ const PUBLICATIONS = [
     badge:    null,
     links:    [],
   },
-{
+/*{
     title:    "Complexity-Theoretic Consequences of Zero-Knowledge with Inefficient Simulation",
     url:      "",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
