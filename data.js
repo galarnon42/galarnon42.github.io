@@ -193,7 +193,7 @@ const PUBLICATIONS = [
     title:    "STIR: Reed-Solomon Proximity Testing with Fewer Queries",
     url:      "https://eprint.iacr.org/2024/390",
     authors:  ["Gal Arnon", "Alessandro Chiesa", "Giacomo Fenzi", "Eylon Yogev"],
-    venue:       "CRYPTO 2024",
+    venue:       "Jounal of the ACM · CRYPTO 2024",
     venueSuffix: " · ZKSummit 11 · ZKProof 6",
     type:     "pub",
     featured: false,
