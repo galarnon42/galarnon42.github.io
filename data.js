@@ -36,16 +36,6 @@ const COAUTHORS = {
    preprint: false → appears in "Publications" section
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
-/*{
-    title:    "Verifying (Almost) as Fast as Reading",
-    url:      "",
-    authors:  ["Gal Arnon", "Jesko Dujmovic", "Yuval Ishai"],
-    venue:    "",
-    type:     "preprint",
-    featured: false,
-    badge:    null,
-    links:    [],
-  },*/
 {
     title:    "Does Witness Indistinguishability Require Cryptography?",
     url:      "",
@@ -56,7 +46,7 @@ const PUBLICATIONS = [
     badge:    null,
     links:    [],
   },
-/*{
+{
     title:    "Complexity-Theoretic Consequences of Zero-Knowledge with Inefficient Simulation",
     url:      "",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
@@ -65,12 +55,22 @@ const PUBLICATIONS = [
     featured: false,
     badge:    null,
     links:    [],
-  },*/
+  },
   {
     title:    "Worst-Case Hardness for Succinct and Decomposed LWE",
     url:      "https://eprint.iacr.org/2026/2443",
     authors:  ["Damiano Abram", "Gal Arnon", "Valerio Cini", "Paul Lou", "Giulio Malavolta", "Lawrence Roy"],
     venue:    "Subsumes: <a href='https://eprint.iacr.org/2026/1829' target='_blank'>Decomposed LWE is Equivalent to Succinct LWE</a>",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
+  {
+    title:    "Verifying (Almost) as Fast as Reading",
+    url:      "",
+    authors:  ["Gal Arnon", "Jesko Dujmovic", "Yuval Ishai"],
+    venue:    "",
     type:     "preprint",
     featured: false,
     badge:    null,
