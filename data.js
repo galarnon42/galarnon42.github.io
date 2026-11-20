@@ -48,7 +48,7 @@ const PUBLICATIONS = [
   },
 {
     title:    "Complexity-Theoretic Consequences of Zero-Knowledge with Inefficient Simulation",
-    url:      "",
+    url:      "https://eccc.weizmann.ac.il/report/2026/322/",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
     venue:    "ITCS 2027",
     type:     "pub",
