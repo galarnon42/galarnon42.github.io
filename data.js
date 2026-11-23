@@ -38,7 +38,7 @@ const COAUTHORS = {
 const PUBLICATIONS = [
 {
     title:    "Does Witness Indistinguishability Require Cryptography?",
-    url:      "",
+    url:      "https://eprint.iacr.org/2026/2957",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
     venue:    "",
     type:     "preprint",
@@ -48,7 +48,7 @@ const PUBLICATIONS = [
   },
 {
     title:    "Complexity-Theoretic Consequences of Zero-Knowledge with Inefficient Simulation",
-    url:      "https://eccc.weizmann.ac.il/report/2026/322/",
+    url:      "https://eprint.iacr.org/2026/2956",
     authors:  ["Gal Arnon", "Noam Mazor", "Rafael Pass", "Jad Silbak"],
     venue:    "ITCS 2027",
     type:     "pub",
