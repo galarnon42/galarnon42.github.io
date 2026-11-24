@@ -1,0 +1,12 @@
+{
+  "name": "saras-workshop-club",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A cheerful, static workshop discovery template with fictional sample content.",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check app.js && node --check data.js && node --check filters.js"
+  }
+}

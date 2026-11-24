@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf8f2">
+  <meta name="description" content="A little space for Sara to discover academic biology workshops, explore new research methods, and save opportunities. All current listings are fictional samples.">
+  <title>Sara’s Workshop Club — Biology, discovery & possibility</title>
+  <link rel="icon" href="./assets/flower.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#explore">Skip to workshops</a>
+  <header class="site-header page-width">
+    <a class="brand" href="./" aria-label="Sara’s Workshop Club, home">
+      <img src="./assets/flower.svg" alt="" width="42" height="42">
+      <span>Sara’s <span class="brand-second">workshop club</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="nav-explore" data-view="all" aria-pressed="true">Explore</button>
+      <button class="saved-nav" data-view="saved" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>Saved <span id="saved-count">0</span></button>
+      <span class="avatar" aria-label="Made for Sara">S<span aria-hidden="true">✧</span></span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">✳</span> A LITTLE SPACE FOR BIG DISCOVERIES</p>
+        <h1 id="hero-title">Follow your<br><em>curiosity,</em> Sara.</h1>
+        <p class="hero-description">New methods. Fresh ideas. Your next research community.<br class="desktop-break"> Discover academic biology workshops and see where your science takes you.</p>
+        <a class="primary-button" href="#explore">Explore biology workshops <span aria-hidden="true">↗</span></a>
+        <span class="hero-footnote"><span aria-hidden="true">♡</span> Made for your wonderfully curious mind.</span>
+      </div>
+      <div class="hero-art" role="img" aria-label="An illustrated scrapbook of a flower, a notebook, and a reminder to stay curious">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="doodle doodle-star" aria-hidden="true">✧</span>
+        <span class="doodle doodle-twinkle" aria-hidden="true">✦</span>
+        <div class="art-note note-back"><span class="tape"></span><span class="note-small">a gentle reminder</span><span class="note-script">Make time<br>for what<br>lights you up.</span><span class="note-heart">♡</span></div>
+        <div class="art-note note-front">
+          <span class="tape"></span>
+          <svg class="hero-flower" viewBox="0 0 240 230" aria-hidden="true">
+            <path d="M121 204c-4-40 2-78-3-119" stroke="#5d735c" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M122 170c33 4 56-14 58-40-31-1-51 11-58 40Z" fill="#8a9b76"/>
+            <path d="M119 151c-32 1-54-17-57-39 33 0 52 13 57 39Z" fill="#a0ac89"/>
+            <g fill="#d98d8a" stroke="#c77877" stroke-width="1.2">
+              <ellipse cx="119" cy="45" rx="20" ry="32" transform="rotate(-8 119 45)"/>
+              <ellipse cx="150" cy="59" rx="20" ry="32" transform="rotate(48 150 59)"/>
+              <ellipse cx="154" cy="92" rx="20" ry="32" transform="rotate(102 154 92)"/>
+              <ellipse cx="127" cy="111" rx="20" ry="32" transform="rotate(165 127 111)"/>
+              <ellipse cx="93" cy="99" rx="20" ry="32" transform="rotate(225 93 99)"/>
+              <ellipse cx="87" cy="65" rx="20" ry="32" transform="rotate(282 87 65)"/>
+            </g>
+            <circle cx="120" cy="78" r="24" fill="#f4d382"/>
+            <circle cx="112" cy="75" r="2.4" fill="#685341"/><circle cx="128" cy="75" r="2.4" fill="#685341"/>
+            <path d="M115 85q5 5 10 0" stroke="#685341" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="flower-caption">good things are growing</span>
+        </div>
+        <div class="round-sticker"><span>LESS SCROLLING</span><strong>more<br>sparkle</strong><span aria-hidden="true">✦</span></div>
+        <div class="art-label"><svg viewBox="0 0 90 40" aria-hidden="true"><path d="M4 8c13 33 51 30 77 7m-18 1 20-3-5 17"/></svg><span>follow the happy little detours</span></div>
+      </div>
+    </section>
+
+    <div class="sample-banner page-width"><span class="sample-symbol" aria-hidden="true">✧</span><p><strong>A little preview of what’s to come.</strong> Every workshop below is fictional sample content. Real biology opportunities will appear here once the search is connected.</p><button data-open-about>About this space <span aria-hidden="true">↗</span></button></div>
+
+    <section id="explore" class="explore-section page-width" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="eyebrow">THE POSSIBILITIES CORNER</p><h2 id="explore-title">Where will your research take you?<span class="heading-spark" aria-hidden="true">✳</span></h2></div><span class="handwritten section-note">a little inspiration for your next chapter</span></div>
+      <div class="explore-tabs" role="group" aria-label="Workshop collection"><button data-view="all" class="collection-tab" aria-pressed="true">All workshops</button><button data-view="saved" class="collection-tab" aria-pressed="false">Your saved finds <span aria-hidden="true">♡</span></button><span class="template-pill"><span aria-hidden="true"></span> SAMPLE COLLECTION</span></div>
+
+      <div class="filter-panel" aria-label="Filter sample workshops">
+        <div class="search-field"><label class="sr-only" for="search-input">Search sample workshops</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search-input" type="search" placeholder="Try a topic or research method" autocomplete="off"></div>
+        <div class="select-field"><label for="topic-filter">BIOLOGY TOPIC</label><select id="topic-filter"><option value="">Any topic</option></select></div>
+        <div class="select-field"><label for="format-filter">FORMAT</label><select id="format-filter"><option value="">Any format</option></select></div>
+        <div class="select-field"><label for="month-filter">WHEN</label><select id="month-filter"><option value="">Any sample month</option></select></div>
+      </div>
+      <div class="filter-helper"><p>Try the sample filters — we can change these to fit you.</p><button id="clear-filters" class="text-button">Reset filters <span aria-hidden="true">↺</span></button></div>
+      <div class="results-bar"><p id="results-summary" aria-live="polite" aria-atomic="true">Loading sample workshops…</p><div class="sort-control"><label for="sort-select">Sort by</label><select id="sort-select"><option value="date">Soonest first</option><option value="title">Name A–Z</option></select></div></div>
+      <div id="workshop-grid" class="workshop-grid"></div>
+      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">✿</span><h3 id="empty-title">A little room for possibility.</h3><p id="empty-copy">Try another filter to find a little inspiration.</p><button id="empty-reset" class="primary-button">Explore all samples <span aria-hidden="true">↗</span></button></div>
+      <noscript><div class="empty-state"><h3>A little JavaScript is needed.</h3><p>Enable JavaScript to explore the six fictional sample workshops and try the filters. This template doesn’t connect to a live search service.</p></div></noscript>
+    </section>
+
+    <section class="closing-note page-width" aria-labelledby="closing-title"><span class="closing-flower" aria-hidden="true">✳</span><div><p class="eyebrow">THIS IS JUST THE BEGINNING</p><h2 id="closing-title">A space that’ll grow with you.</h2><p>Your field, your interests, your next step.<br>When the search is ready, new biology workshops will find their way here.</p></div><button class="secondary-button" data-open-about>What’s next? <span aria-hidden="true">↗</span></button></section>
+  </main>
+
+  <footer class="site-footer page-width"><a class="footer-brand" href="./">Sara’s workshop club <span aria-hidden="true">✿</span></a><p>Made with care, and a little bit of magic.</p><span class="footer-status">A template full of possibilities.</span></footer>
+
+  <dialog id="details-dialog" aria-labelledby="dialog-title"><button class="dialog-close" data-close-dialog aria-label="Close workshop details">×</button><div id="dialog-content"></div></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><button class="dialog-close" data-close-dialog aria-label="Close about this space">×</button><div class="about-content"><span class="about-flower" aria-hidden="true">✿</span><p class="eyebrow">A SMALL BEGINNING</p><h2 id="about-title">Your curiosity. Your little corner.</h2><p>This is a first look at an academic biology workshop finder made for Sara. Every listing, date, location, and price is fictional — there’s nothing to apply for just yet.</p><ol><li><strong>Explore a few possibilities.</strong><br>Try the sample filters and open a workshop that catches your eye.</li><li><strong>Keep your favorite ideas close.</strong><br>Tap the heart on any card. Saved finds stay in this browser when storage is available.</li><li><strong>Make the search yours.</strong><br>Research topics, methods, places, dates, and funding can take shape once you know what you’re looking for.</li></ol><p class="about-footnote">Later, a search will add real academic biology workshops here so you can compare your options. For now, every listing is a sample.</p><button class="primary-button" data-close-dialog>Let’s explore <span aria-hidden="true">↗</span></button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
