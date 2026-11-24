@@ -36,6 +36,16 @@ const COAUTHORS = {
    preprint: false → appears in "Publications" section
    ---------------------------------------------------------- */
 const PUBLICATIONS = [
+  {
+    title:    "(Almost) Tight Bounds for Pairing-Based SNARGs",
+    url:      "",
+    authors:  ["Gal Arnon", "Eylon Yogev"],
+    venue:    "",
+    type:     "preprint",
+    featured: false,
+    badge:    null,
+    links:    [],
+  },
 {
     title:    "Does Witness Indistinguishability Require Cryptography?",
     url:      "https://eprint.iacr.org/2026/2957",
