@@ -38,7 +38,7 @@ const COAUTHORS = {
 const PUBLICATIONS = [
   {
     title:    "(Almost) Tight Bounds for Pairing-Based SNARGs",
-    url:      "",
+    url:      "https://eprint.iacr.org/2026/3031",
     authors:  ["Gal Arnon", "Eylon Yogev"],
     venue:    "",
     type:     "preprint",
